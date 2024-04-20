@@ -2,7 +2,7 @@ import express from 'express';
 import logger from 'morgan';
 import {Server} from 'socket.io';
 import {createServer} from 'node:http';
-import dotenv from 'dotenv';
+//import dotenv from 'dotenv';
 //aqui crear el cliente de sqlite de turso 
 const port = process.env.PORT ?? 3000;
 const app = express();
