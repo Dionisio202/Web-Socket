@@ -39,7 +39,6 @@ connection.connect((err) => {
     });
 
 });
-
 const port = process.env.PORT ?? 3000;
 const app = express();
 const server = createServer(app);
@@ -84,6 +83,6 @@ app.get('/messages', (req, res) => {
     });
 });
 
-server.listen(port, () => {
-    console.log(`Server is running on http://localhost:${port}`);
+server.listen(port, '0.0.0.0', () => {
+    console.log(`Servidor corriendo en http://192.168.90.5:${port}`);
 });
